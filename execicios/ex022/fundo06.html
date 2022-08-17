@@ -4,19 +4,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>posicionando imagens em tela cheia</title>
+    <title>fundo fixo de tela</title>
     <style>
+        /*
+        height: 100vh; altura da viewport(tela)*/
+        /*background-position: center top; alinha a imagem de fundo 
+        */
+        /*
+        background-repeat: no-repeat; nao repetir a imagem na tela
+        */
+        /*
+         background-size: cover; tamanho da imagem e posicionamento para poder usar em varios tamanhos de tela (cobrindo tela inteira
+         */
+        /*
+        background-attachment: fixed; fixa a imagem podendo rolar o conteudo
+        */
+
         body {
-            height: 100vh; /*altura da viewport(tela)*/      background-color: black;
+            height: 100vh;
+                             
+            background-color: black;
             background-image: url('imagens/wallpaper002.jpg');
-            background-position: center top; /*alinha a imagem de fundo */
-            background-repeat: no-repeat;/*nao repetir a imagem na tela*/
-            background-size: cover; /*tamanho da imagem e posicionamento para poder usar em varios tamanhos de tela */
+            background-position: center top; 
+            background-repeat: no-repeat;
+            background-size: cover; 
+            background-attachment: fixed;
+            
+           
+            /*
+            shorthand - backgraund
+            color > image > position > repeat > [size] > attachment 
+            */
+            /*background:  black url('imagens/wallpaper002.jpg') center center no-repeat fixed ; o size "cover" tem que colocar por fora pois nao esta funcionando no shorthand ate a data de hoje 11/08/2022*/ 
 
         }
         main {
             background-color: white;
-            width: 400px;
+            max-width: 400px;
             padding: 10px;
             margin: auto;
             border: 1px solid black;
@@ -28,6 +52,9 @@
     <main>
         <h1>Teste de imagem de fundo</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas blanditiis necessitatibus optio dolore voluptatum unde vero consequuntur, molestias ratione distinctio! Voluptatem necessitatibus rem suscipit perspiciatis atque perferendis similique dolores eum?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas enim magnam repudiandae sequi dolor doloremque, consequuntur, ducimus natus incidunt doloribus libero unde fugiat nostrum, quasi blanditiis. Et tempora natus voluptatum?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta quam aliquid vitae reiciendis asperiores nostrum, excepturi maiores iure et culpa, porro corrupti omnis, aut quis hic itaque velit magni rem.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas blanditiis necessitatibus optio dolore voluptatum unde vero consequuntur, molestias ratione distinctio! Voluptatem necessitatibus rem suscipit perspiciatis atque perferendis similique dolores eum?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas enim magnam repudiandae sequi dolor doloremque, consequuntur, ducimus natus incidunt doloribus libero unde fugiat nostrum, quasi blanditiis. Et tempora natus voluptatum?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta quam aliquid vitae reiciendis asperiores nostrum, excepturi maiores iure et culpa, porro corrupti omnis, aut quis hic itaque velit magni rem.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas blanditiis necessitatibus optio dolore voluptatum unde vero consequuntur, molestias ratione distinctio! Voluptatem necessitatibus rem suscipit perspiciatis atque perferendis similique dolores eum?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas enim magnam repudiandae sequi dolor doloremque, consequuntur, ducimus natus incidunt doloribus libero unde fugiat nostrum, quasi blanditiis. Et tempora natus voluptatum?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta quam aliquid vitae reiciendis asperiores nostrum, excepturi maiores iure et culpa, porro corrupti omnis, aut quis hic itaque velit magni rem.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas blanditiis necessitatibus optio dolore voluptatum unde vero consequuntur, molestias ratione distinctio! Voluptatem necessitatibus rem suscipit perspiciatis atque perferendis similique dolores eum?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas enim magnam repudiandae sequi dolor doloremque, consequuntur, ducimus natus incidunt doloribus libero unde fugiat nostrum, quasi blanditiis. Et tempora natus voluptatum?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta quam aliquid vitae reiciendis asperiores nostrum, excepturi maiores iure et culpa, porro corrupti omnis, aut quis hic itaque velit magni rem.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas blanditiis necessitatibus optio dolore voluptatum unde vero consequuntur, molestias ratione distinctio! Voluptatem necessitatibus rem suscipit perspiciatis atque perferendis similique dolores eum?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas enim magnam repudiandae sequi dolor doloremque, consequuntur, ducimus natus incidunt doloribus libero unde fugiat nostrum, quasi blanditiis. Et tempora natus voluptatum?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta quam aliquid vitae reiciendis asperiores nostrum, excepturi maiores iure et culpa, porro corrupti omnis, aut quis hic itaque velit magni rem.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas blanditiis necessitatibus optio dolore voluptatum unde vero consequuntur, molestias ratione distinctio! Voluptatem necessitatibus rem suscipit perspiciatis atque perferendis similique dolores eum?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas enim magnam repudiandae sequi dolor doloremque, consequuntur, ducimus natus incidunt doloribus libero unde fugiat nostrum, quasi blanditiis. Et tempora natus voluptatum?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta quam aliquid vitae reiciendis asperiores nostrum, excepturi maiores iure et culpa, porro corrupti omnis, aut quis hic itaque velit magni rem.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas blanditiis necessitatibus optio dolore voluptatum unde vero consequuntur, molestias ratione distinctio! Voluptatem necessitatibus rem suscipit perspiciatis atque perferendis similique dolores eum?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas enim magnam repudiandae sequi dolor doloremque, consequuntur, ducimus natus incidunt doloribus libero unde fugiat nostrum, quasi blanditiis. Et tempora natus voluptatum?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta quam aliquid vitae reiciendis asperiores nostrum, excepturi maiores iure et culpa, porro corrupti omnis, aut quis hic itaque velit magni rem.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas blanditiis necessitatibus optio dolore voluptatum unde vero consequuntur, molestias ratione distinctio! Voluptatem necessitatibus rem suscipit perspiciatis atque perferendis similique dolores eum?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas enim magnam repudiandae sequi dolor doloremque, consequuntur, ducimus natus incidunt doloribus libero unde fugiat nostrum, quasi blanditiis. Et tempora natus voluptatum?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta quam aliquid vitae reiciendis asperiores nostrum, excepturi maiores iure et culpa, porro corrupti omnis, aut quis hic itaque velit magni rem.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas blanditiis necessitatibus optio dolore voluptatum unde vero consequuntur, molestias ratione distinctio! Voluptatem necessitatibus rem suscipit perspiciatis atque perferendis similique dolores eum?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas enim magnam repudiandae sequi dolor doloremque, consequuntur, ducimus natus incidunt doloribus libero unde fugiat nostrum, quasi blanditiis. Et tempora natus voluptatum?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta quam aliquid vitae reiciendis asperiores nostrum, excepturi maiores iure et culpa, porro corrupti omnis, aut quis hic itaque velit magni rem.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas blanditiis necessitatibus optio dolore voluptatum unde vero consequuntur, molestias ratione distinctio! Voluptatem necessitatibus rem suscipit perspiciatis atque perferendis similique dolores eum?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas enim magnam repudiandae sequi dolor doloremque, consequuntur, ducimus natus incidunt doloribus libero unde fugiat nostrum, quasi blanditiis. Et tempora natus voluptatum?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta quam aliquid vitae reiciendis asperiores nostrum, excepturi maiores iure et culpa, porro corrupti omnis, aut quis hic itaque velit magni rem.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas blanditiis necessitatibus optio dolore voluptatum unde vero consequuntur, molestias ratione distinctio! Voluptatem necessitatibus rem suscipit perspiciatis atque perferendis similique dolores eum?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas enim magnam repudiandae sequi dolor doloremque, consequuntur, ducimus natus incidunt doloribus libero unde fugiat nostrum, quasi blanditiis. Et tempora natus voluptatum?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta quam aliquid vitae reiciendis asperiores nostrum, excepturi maiores iure et culpa, porro corrupti omnis, aut quis hic itaque velit magni rem.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas blanditiis necessitatibus optio dolore voluptatum unde vero consequuntur, molestias ratione distinctio! Voluptatem necessitatibus rem suscipit perspiciatis atque perferendis similique dolores eum?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas enim magnam repudiandae sequi dolor doloremque, consequuntur, ducimus natus incidunt doloribus libero unde fugiat nostrum, quasi blanditiis. Et tempora natus voluptatum?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta quam aliquid vitae reiciendis asperiores nostrum, excepturi maiores iure et culpa, porro corrupti omnis, aut quis hic itaque velit magni rem.</p>
     </main>
 </body>
 </html>
