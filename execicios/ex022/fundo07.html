@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="enpt-br">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,12 +7,16 @@
     <title>Alinhamento vertical</title>
     <style>
         #container {
+            background-image: url('imagens/target001.png');
+            background-size: 100% 100%;
             position: relative;
-            height: 500px;
+            height: 96vh;
             padding: 10px;
             background-color: purple;
         }
         #conteudo {
+            background-image: url('imagens/target001.png');
+            background-size: 100% 100%;
             position: absolute;
             height: 200px;
             width: 400px;
@@ -20,8 +24,10 @@
             left: 50%;
             top: 50%;
             
+            transform: translate( -50%, -50% );
+            /*componente para mover o elemento ou caixa */
         }
-        /*quando se coloca posicionamento absoluto se pode usar para centralização vertical */
+        /*quando se coloca posicionamento absoluto se pode usar para centralização vertical e tambem adicionar as propriedades left, top, right, bottom */
     </style>
 </head>
 <body>
