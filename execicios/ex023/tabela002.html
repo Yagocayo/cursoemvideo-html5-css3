@@ -37,6 +37,13 @@
             background-color: #383838;
             color: white;
         }
+        /*pseudo class para zebrar a tabela */
+        tbody > tr:nth-child(odd) {/*2n-1*/
+          background-color: lightgray;
+        }
+        tbody > tr:nth-child(even) {/*2n*/
+          background-color: white;
+        }
 
     </style>
 </head>
@@ -100,7 +107,7 @@
               </tr>
               <tr>
                 <td class="posi">8</td>
-                <td>ceará</td>
+                <td>Ceará</td>
                 <td class="num">9 240 580</td>
               </tr>
               <tr>
