@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de iframes</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        iframe {
+            width: 95vw;
+            height: 400px;
+            border: 2px solid black ;
+        }
+    </style>
+</head>
+<body>
+    <h1>Faça uma escolha</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quia autem facilis! Incidunt ipsam vitae maiores? Asperiores hic odio ullam, laudantium, rerum unde vitae sit corrupti commodi ipsum eveniet doloribus. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus quasi aut molestias in dolorem veritatis est eos, quaerat neque, necessitatibus eaque repellendus commodi illum enim autem ipsam, quia perspiciatis earum.</p>
+    <ul> 
+        <li><a href="paginas-extras/pag001.html" target="frame">primeira pagina</a></li>
+        <li><a href="paginas-extras/pag002.html"target="frame">segunda pagina</a></li>
+        <li><a href="paginas-extras/pag003.html"target="frame">terceira pagina</a></li>
+    </ul>
+    <!--target= "frame" para identificar na hora de colocar no link para acessar a pagina pelo iframe-->
+    
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quia autem facilis! Incidunt ipsam vitae maiores? Asperiores hic odio ullam, laudantium, rerum unde vitae sit corrupti commodi ipsum eveniet doloribus. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus quasi aut molestias in dolorem veritatis est eos, quaerat neque, necessitatibus eaque repellendus commodi illum enim autem ipsam, quia perspiciatis earum.</p>
+
+    <iframe name="frame" src=""><!--name frame para identificar na hora de colocar no link para acessar a pagina pelo iframe-->
+        <p>infelizmente seu navegador nao e compativel</p>
+    </iframe>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quia autem facilis! Incidunt ipsam vitae maiores? Asperiores hic odio ullam, laudantium, rerum unde vitae sit corrupti commodi ipsum eveniet doloribus. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus quasi aut molestias in dolorem veritatis est eos, quaerat neque, necessitatibus eaque repellendus commodi illum enim autem ipsam, quia perspiciatis earum.</p>
+</body>
+</html>
