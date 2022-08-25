@@ -13,9 +13,14 @@
 </head>
 <body>
     <h1>Meu primeiro formulário</h1>
-    <form>
-        <p>Nome: <input type="text" name="nome" id="nome"></p>
-        <p>Sobrenome: <input type="text" name="sobrenome" id="sobrenome"></p>
+    <form action="cadastro.php" autocomplete="off">
+        <p><label for="inome">Nome:</label> 
+            <input type="text" name="nome" id="inome"></p>
+        <p><label for="isobrenome">Sobrenome:</label> 
+            <input type="text" name="sobrenome" id="isobrenome"></p>
         <p><input type="submit" value="Enviar"></p>
+
+        <!--para adicionar os quadros usar o input text e para botão de enviar usar o input submit--> <!--para fazer a ligação do quadrinho de dados que vai ser adicionado os dados usar a teg label emvelopando o nome e no for do label usar o name ou id onde melhor é o id-->
+        <!--(sempre usar label para juntar a janela com o nome )-->
 </body>
 </html>
