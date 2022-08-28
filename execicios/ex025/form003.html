@@ -7,9 +7,44 @@
     <title>Formulário</title>
 </head>
 <body>
-    <h1>Teste de formulário</h1>
-    <form action="cadastro.php" method="get">
-        
+    <h1>Teste de formulário</h1> 
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <p> 
+            <label for="inome">Nome:</label>
+            <input type="text" name="nome" id="inome" required maxlength="30" placeholder="Nome completo" autocomplete="name">
+        </p>
+        <p>
+            <label for="imedia">Média:</label>
+            <input type="number" name="media" id="imedia" min="0" max="10" placeholder=" 0 - 10" step="0.5">
+        </p>
+        <p>
+            <label for="imes">Período Letivo:</label>
+            <input type="month" name="mes" id="imes">
+        </p>
+        <p>
+            <label for="idia">Dia da prova:</label>
+            <input type="date" name="dia" id="idia">
+        </p>
+        <p>
+            <label for="ihora">Hora da prova</label>
+            <input type="time" name="hora" id="ihora">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
     </form>
 </body>
 </html>
+
+
+
+
+<!--maxlength e minlength -> determinam o maximo e minimo de dados letras e simbolos -->
+<!--required -> faz a input e label ligação entre os elementos-->
+<!-- placeholder= -> determina o que aparece dentro do quadro como sugestão -->
+<!--min= e max= -> determina a quantidade limite dos dados numericos-->
+<!-- autocomplete -> propriedade para determinar o complete de dados que ja foram digitados e caso colocado no form ele liga e desliga a função do autocomple-->
+<!--o for do label e o id do input precisam ser os mesmos-->
+<!--value= ao utilizar esse elemento o placeholder deixa de funcionar-->
+<!-- step="0.5" -> determina numeros quebrados da nota-->
