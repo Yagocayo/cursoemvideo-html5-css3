@@ -11,15 +11,35 @@
 
     <form action="cadastro.php" method="get" autocomplete="on">
         <fieldset>
-            <legend>Esporte favoritos</legend>
-            <input type="checkbox" name="" id=">
-
-
+            <legend>Sexo</legend>
+            <input type="radio" name="Sexo" id="imasc"value="M">
+            <label for="imasc">Masculino</label><br>
+            <input type="radio" name="Sexo" id="ifem" value="F" checked>
+            <label for="ifem">Feminino</label>
         </fieldset>
+        <!--os botões de radio de um mesmo grupo precisam dos mesmos names para voce conseguir desmarcar se os names tiverem diferentes ele nao desmarcam apos marcados-->
+
+        <!-- utilizar o elemento checked apos o id vai deixar marcado de inicio emradio nao da pra colocar mais de um-->
+       <fieldset>
+            <legend>Esportes Favoritos </legend>
+            <input type="checkbox" name="esbas" id="iesbas">
+            <label for="iesbas">Basquete</label><br>
+            <input type="checkbox" name="esfut" id="iesfut">
+            <label for="iesfut">Futebol</label><br>
+            <input type="checkbox" name="esvol" id="iesvol">
+            <label for="iesvol">Volei</label><br>
+            <input type="checkbox" name="esnat" id="iesnat">
+            <label for="iesnat">Natação</label><br>
+            <input type="checkbox" name="esten" id="iesten">
+            <label for="iesten">Tênis</label>
+             
+       </fieldset>
 
 
-        <input type="submit" value="Enviar">
-        <input type="reset" value="Limpar">
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
 
     </form>
 </body>
