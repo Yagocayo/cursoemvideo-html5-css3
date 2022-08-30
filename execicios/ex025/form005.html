@@ -7,6 +7,9 @@
     <title>Formulário</title>
 </head>
 <body>
+    <!--os botões de radio de um mesmo grupo precisam dos mesmos names para voce conseguir desmarcar se os names tiverem diferentes ele nao desmarcam apos marcados-->
+    <!-- utilizar o elemento checked apos o id vai deixar marcado de inicio emradio nao da pra colocar mais de um-->    
+
     <h1>Exemplo de Formulário</h1>
 
     <form action="cadastro.php" method="get" autocomplete="on">
@@ -17,9 +20,6 @@
             <input type="radio" name="Sexo" id="ifem" value="F" checked>
             <label for="ifem">Feminino</label>
         </fieldset>
-        <!--os botões de radio de um mesmo grupo precisam dos mesmos names para voce conseguir desmarcar se os names tiverem diferentes ele nao desmarcam apos marcados-->
-
-        <!-- utilizar o elemento checked apos o id vai deixar marcado de inicio emradio nao da pra colocar mais de um-->
        <fieldset>
             <legend>Esportes Favoritos </legend>
             <input type="checkbox" name="esbas" id="iesbas">
@@ -32,11 +32,8 @@
             <label for="iesnat">Natação</label><br>
             <input type="checkbox" name="esten" id="iesten">
             <label for="iesten">Tênis</label>
-             
        </fieldset>
-
-
-        <p>
+       <p>
             <input type="submit" value="Enviar">
             <input type="reset" value="Limpar">
         </p>
